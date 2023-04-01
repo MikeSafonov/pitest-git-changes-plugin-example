@@ -7,12 +7,13 @@ public class CalculatorService {
         if (a > b) {
             return sum * a;
         }
-        callMe2(a, b);
-        System.out.println(sum);
+        callMe(a, b);
+        System.out.println(sum * a);
+        int c = sum + sum + a;
         return sum * b;
     }
 
-    private void callMe2(int a, int b) {
+    private void callMe(int a, int b) {
         int i = a + b;
         System.out.println(i);
     }
